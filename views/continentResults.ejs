@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400&display=swap" rel="stylesheet">
+    <title>Covid-19 | Results</title>
+  </head>
+  <body>
+        
+          <center><h3 style="font-family: 'Dela Gothic One', cursive; padding: 20px ; color: darkcyan">STAY HOME , STAY SAFE</h3></center>
+          <div class="container" >
+          <section width="100%">
+            <div class=row style="background-color: rgb(111, 167, 185)">
+                <div class="col" style="padding: 10px">
+                    <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRay55yM4iTgz2MHEBAGx1So4FGA0zq18xsgbLhgVwXt7Y2ypAwRoBULyVMNTdt0kuEuEM&usqp=CAU" width="500px" height="400px" style="width: 100%">
+                </div>
+                <div class="col" style="padding: 20px">
+                        <table style="width: 100%" cellpadding="10px">
+                                <tr class="table-warning">
+                                  <th>Total Cases</th>
+                                  <td><%= result_data.cases%></td>
+                                </tr>
+                                <tr class="table-warning">
+                                  <th>Today's Cases</th>
+                                  <td><%= result_data.todayCases%></td>
+                                </tr>
+                                <tr class="table-danger">
+                                  <th>Total Deaths</th>
+                                  <td><%= result_data.deaths%></td>
+                                </tr>
+                                <tr class="table-danger">
+                                  <th>Today Deaths</th>
+                                  <td><%= result_data.todayDeaths%></td>
+                                </tr>
+                                <tr class="table-success">
+                                  <th>Total Recovered</th>
+                                  <td><%= result_data.recovered%></td>
+                                </tr>
+                                <tr class="table-success">
+                                  <th>Today Recovered</th>
+                                  <td><%= result_data.todayRecovered%></td>
+                                </tr>
+                                <tr class="bg-warning">
+                                  <th>Active</th>
+                                  <td><%= result_data.active%></td>
+                                </tr>
+                                <tr class="bg-danger">
+                                  <th>Critical</th>
+                                  <td><%= result_data.critical%></td>
+                                </tr>
+                              </table>
+                </div>
+            </div>
+            
+          </section>
+          </div>
+          <br>
+          <hr>
+          <center><h3 style="font-family: 'Kiwi Maru', serif;">Want to perform another search? &nbsp;&nbsp;<a class="btn btn-warning" href="/">Home</a> </h3></center>
+        </div>
+      </body>            
+</html>

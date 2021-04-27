@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Covid-19 App</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="d-flex flex-column align-content-center">
+      <br />
+      
+      <div class="header" style="background-color: rgb(224, 201, 201)">
+        <br>
+          <center><h1 style="font-family: 'Dela Gothic One', cursive;color: cadetblue">Covid-19 Statistics</h1></center>
+          <br />
+          </div>
+          <center><img src="https://centaur-wp.s3.eu-central-1.amazonaws.com/econsultancy/prod/content/uploads/2020/05/04105324/coronavirus-stats.png?auto=compress,format&q=60&w=652&h=341" width="600px" ></center>
+          <br/>
+      
+    
+      <div class="conatiner" style="background-color: rgb(224, 201, 201)">
+       
+      <form
+        action="/searchWorld"
+        method="GET"
+        class="mt-5 justify-content-center d-flex"
+      >
+      <button class="ml-3 text-center btn btn-primary">Total Cases Round the World</button>
+      </form>
+
+      <form
+        action="/searchContinent"
+        method="GET"
+        class="mt-5 justify-content-center d-flex"
+      >
+        <input
+          type="text"
+          class="form-control w-25"
+          placeholder="Enter the continent"
+          name="continent"
+        />
+        <button class="ml-3 text-center btn btn-success">Search By Continent</button>
+      </form>
+      
+      <form
+        action="/searchCountry"
+        method="GET"
+        class="mt-5 justify-content-center d-flex"
+      >
+        <input
+          type="text"
+          class="form-control w-25"
+          placeholder="Enter the country name"
+          name="country"
+        />
+        <button class="ml-3 text-center btn btn-success">Search By Country</button>
+      </form>
+
+      <form
+      action="/searchState"
+      method="GET"
+      class="mt-5 justify-content-center d-flex"
+    >
+      <input
+        type="text"
+        class="form-control w-25"
+        placeholder="Enter the state name"
+        name="state"
+      />
+      <button class="ml-3 text-center btn btn-success">Search By US State</button>
+    </form>
+     
+      <br>
+      <br>
+      </div>
+    </div>
+  </body>
+  <br>
+  <hr>
+  <center><footer style="background-color: rgb(224, 201, 201)"><br><h4 style="font-family: 'Kiwi Maru', serif;">Project by Tulasi</h4><br></footer></center>
+  <br>
+</html>
